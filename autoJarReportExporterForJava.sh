@@ -28,7 +28,7 @@ javac  -encoding UTF-8  $valid_path/*.java;
 echo "javac compilation finished.";
 
 cd $valid_path; jar cf $dir_name.jar *.java *.class *.pdf;
-echo "jar file generated..";
+echo "jar file generated.";
 
 for f in $valid_path/*.java ; do
     java -cp $valid_path/$dir_name.jar `echo ${f##*/} | sed 's/\.[^\.]*$//'`;
