@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{newtxtext,newtxmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{listings}
+\lstset{%
+ language={Java},
+ % backgroundcolor={\color[gray]{.95}},%
+ tabsize=2, % tab space width
+ showstringspaces=false, % don't mark spaces in strings
+ basicstyle={\ttfamily},%
+ %identifierstyle={\small},%
+ commentstyle={\itshape},%
+ keywordstyle={\bfseries},%
+ %ndkeywordstyle={\small},%
+ stringstyle={\ttfamily},
+ %frame={tb},
+ breaklines=true,
+ columns=[l]{fullflexible},%
+ % numbers=left,%
+ % numberstyle={\small},%
+ xrightmargin=0zw,%
+ %xleftmargin=3zw,%
+ stepnumber=1,
+ numbersep=1zw,%
+ lineskip=-0.5ex%
+}
+
+\title{情報工学4レポート第\input {|"basename `pwd` | cut -f 1 -d- | sed -e 's/report//'"} 回 } %\\
+  %「型 (整数/実数/文字), 変数, 入力文, 演算」}
+\author{氏 名：  \\
+        科類・クラス： \\
+        学生証番号： \\
+        E-mail: }
+\date{\today}
+%
+\begin{document}
+\maketitle
+% define counter
+\newcount\cnt
+\cnt=0
+
+
+% define class name 
+\def\javaClassName {DiamondPattern}
+% increment counter
+\advance\cnt by1
+\section{課題 \number\cnt}
+
+\subsection{プログラム}
+\label{sec:prog-list1}
+% input code
+\lstinputlisting[numbers=left,numberstyle=\ttfamily,xleftmargin=2zw]{./\javaClassName.java}
+%
+\subsection{実行結果}
+\label{sec:results \number\cnt}
+
+\begin{quote}           % 字下げ
+% execute
+MBP:\input {|"basename `pwd`"} masahiromatsui\$ java \javaClassName \\
+\input{|"java \javaClassName"}
+\end{quote}
+% 考察
+\subsection{考察}
+
+
+
+% define class name 
+\def\javaClassName {DiamondPattern}
+% increment counter
+\advance\cnt by1
+\section{課題 \number\cnt}
+
+\subsection{プログラム}
+\label{sec:prog-list1}
+% input code
+\lstinputlisting[numbers=left,numberstyle=\ttfamily,xleftmargin=2zw]{./\javaClassName.java}
+%
+\subsection{実行結果}
+\label{sec:results \number\cnt}
+
+\begin{quote}           % 字下げ
+% execute
+MBP:\input {|"basename `pwd`"} masahiromatsui\$ java \javaClassName \\
+\input{|"java \javaClassName"}
+\end{quote}
+% 考察
+\subsection{考察}
+
+
+
+% define class name 
+\def\javaClassName {DiamondPattern}
+% increment counter
+\advance\cnt by1
+\section{課題 \number\cnt}
+
+\subsection{プログラム}
+\label{sec:prog-list1}
+% input code
+\lstinputlisting[numbers=left,numberstyle=\ttfamily,xleftmargin=2zw]{./\javaClassName.java}
+%
+\subsection{実行結果}
+\label{sec:results \number\cnt}
+
+\begin{quote}           % 字下げ
+% execute
+MBP:\input {|"basename `pwd`"} masahiromatsui\$ java \javaClassName \\
+\input{|"java \javaClassName"}
+\end{quote}
+% 考察
+\subsection{考察}
+
+
+
+
+
+\end{document}
